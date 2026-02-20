@@ -2,8 +2,13 @@
 using namespace std;
 
 int main() {
-    float puissances[5] = {50.0, 22.0, 150.0, 7.4};   // en kw
-    float distance[5] = {12.5, 22.0, 11.0, 150.0, 7.4};   // en kms
+  float puissances[5] = {50.0, 22.0, 11.0, 150.0, 7.4}; // en kW
+  float distance[5] = {12.5, 35.0, 8.0, 60.0, 2.3};   // en km
 
-    return 0;
+  for (int i = 0; i < 5; i++) {
+    cout << "Borne " << i + 1 << " : " << puissances[i] << " kW, a "
+         << distance[i] << " km" << endl;
+  }
+
+  return 0;
 }
