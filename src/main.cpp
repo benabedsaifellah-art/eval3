@@ -10,8 +10,16 @@ int main() {
 
   afficherBornes(puissances, distance, 5);
      int indice = indiceBorneLaPlusProche(distance, 5);
+    // Saisie pour modifierBorne
       cout << "Indice de la borne la plus proche : " << indice << endl;
-
+    cout << "Entrez le numero de la borne a modifier : ";
+    int numero;
+    cin >> numero;
+     cout << "Entrez la nouvelle valeur de cette distance : ";
+   float dist;
+    cin >> dist;
+   modifierBorne(distance, numero, dist);
+     afficherBornes(puissances, distance, 5);
   return 0;
 }
 
